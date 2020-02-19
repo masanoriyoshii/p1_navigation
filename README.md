@@ -18,7 +18,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ## Getting Started  
 
-* This repository is only for Windows 10 (64-bit).  *
+**This repository is only for Windows 10 (64-bit).**
 
 ### Step 1
 Follow this [instructions](https://github.com/udacity/deep-reinforcement-learning#dependencies) to set up your Python environments.
@@ -29,16 +29,7 @@ Follow this [instructions](https://github.com/udacity/deep-reinforcement-learnin
 For this project, you will not need to install Unity - this is because we have already built the environment for you, and you can download it from the [link here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip).
 
 
-Then, place the file in the p1_navigation/ folder in the DRLND GitHub repository, and unzip (or decompress) the file.
+Then, place the file in the `p1_navigation/` folder, and unzip (or decompress) the file.
 
-(For Windows users) Check out this link if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
-
-(For AWS) If you'd like to train the agent on AWS (and have not enabled a virtual screen), then please use this link to obtain the "headless" version of the environment. You will not be able to watch the agent without enabling a virtual screen, but you will be able to train the agent. (To watch the agent, you should follow the instructions to enable a virtual screen, and then download the environment for the Linux operating system above.)
-
-Step 3: Explore the Environment
-After you have followed the instructions above, open Navigation.ipynb (located in the p1_navigation/ folder in the DRLND GitHub repository) and follow the instructions to learn how to use the Python API to control the agent.
-
-Watch the (silent) video below to see what kind of output to expect from the notebook, if everything is working properly!
-
-
-In the last code cell of the notebook, you'll learn how to design and observe an agent that always selects random actions at each timestep. Your goal in this project is to create an agent that performs much better!
+### Step 3
+Check `Navigation.ipynb` to learn how to use the Python API to control the agent.
