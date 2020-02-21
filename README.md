@@ -33,3 +33,10 @@ Then, place the file in the `p1_navigation/` folder, and unzip (or decompress) t
 
 ### Step 3
 Check `Navigation.ipynb` to learn how to use the Python API to control the agent.
+
+
+## Instructions
+
+- `Navigation.ipynb` : use to control the agent
+- `dqn_agent.py` : use to construct a DQN agents
+- `model.py` : use to construct a Q Network
