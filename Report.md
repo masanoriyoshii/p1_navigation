@@ -34,7 +34,11 @@ This project aims to understand Reinforcement Learning through the coding exerci
 ### Starting Point
 
 ```
-def dqn(n_episodes=2000, max_t=1000, eps_start=1.00, eps_end=0.01, eps_decay=0.995):
+n_episodes = 2000
+max_t = 1000
+eps_start = 1.0
+eps_end = 0.01
+eps_decay = 0.995
 ```
 
 ```
@@ -69,7 +73,41 @@ Episode 1900	Average Score: 15.22
 Episode 2000	Average Score: 16.19
 ```
 
-![ダウンロード (1)](https://user-images.githubusercontent.com/4464676/74999091-fc6fb780-549d-11ea-9cd4-8c8876fb7a0a.png)
+![](https://user-images.githubusercontent.com/4464676/74999091-fc6fb780-549d-11ea-9cd4-8c8876fb7a0a.png)
 
 
 ### After tweaking the hyper parameters
+
+```
+n_episodes = 1000
+max_t = 1000
+eps_start = 0.75
+eps_end = 0.01
+eps_decay = 0.9
+```
+
+```
+BUFFER_SIZE = int(1e5)  # replay buffer size
+BATCH_SIZE = 64         # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR = 5e-4               # learning rate
+UPDATE_EVERY = 4        # how often to update the network
+```
+
+```
+Episode 100	Average Score: 4.14
+Episode 200	Average Score: 8.68
+Episode 300	Average Score: 12.62
+Episode 305	Average Score: 13.01
+Environment solved in 205 episodes!	Average Score: 13.01
+```
+
+![](https://user-images.githubusercontent.com/4464676/76272910-dd578f00-62bf-11ea-8be3-4a8473c8336a.png)
+
+## Ideas for Future Work
+
+Try other algorithms.
+- Experience Replay Buffer
+- Double DQN
+- Dueling DQN
